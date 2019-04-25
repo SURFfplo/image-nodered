@@ -6,6 +6,7 @@ USER root
 RUN apk add --virtual build-dep python make g++ &&\
   npm install node-red-contrib-amqp &&\
   npm install node-red-dashboard &&\
+  npm install node-red-contrib-md5 &&\
   apk del build-dep
 
 USER node-red
