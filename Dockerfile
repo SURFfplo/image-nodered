@@ -4,8 +4,8 @@ LABEL maintainer="Ronald Ham <ronald.ham@surfnet.nl"
 # install NODE_RED supplements
 USER root
 RUN apk add --virtual build-dep python make g++ &&\
-  npm install -g node-red-contrib-amqp &&\
-  npm install -g node-red-dashboard &&\
+  npm install node-red-contrib-amqp &&\
+  npm install node-red-dashboard &&\
   apk del build-dep
 
 USER node-red
