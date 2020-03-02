@@ -5,10 +5,10 @@ LABEL maintainer="Ronald Ham <ronald.ham@surfnet.nl"
 USER root
 RUN apk update \
   && apk add --virtual build-dep python make g++ &&\
-  npm install node-red-contrib-amqp &&\
   npm install node-red-dashboard &&\
   npm install node-red-contrib-md5 &&\
   npm install node-red-contrib-soap &&\
+  npm install node-red-contrib-amqp &&\
   apk del build-dep
 
 # install ldap system commands
