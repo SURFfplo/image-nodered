@@ -9,7 +9,8 @@ LABEL datum="2020 03 02"
 USER root
 RUN apk update \
   && apk add --virtual build-dep python make g++ &&\
-  npm install -g node-red-contrib-rhea &&\
+  npm install rhea &&\
+  npm install node-red-contrib-rhea &&\
   npm install node-red-dashboard &&\
   npm install node-red-contrib-md5 &&\
   npm install node-red-contrib-soap &&\
