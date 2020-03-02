@@ -1,4 +1,5 @@
-FROM nodered/node-red-docker:slim-v10
+FROM nodered/node-red:latest-10-minimal
+#FROM nodered/node-red-docker:slim-v10
 LABEL maintainer="Ronald Ham <ronald.ham@surfnet.nl"
 
 # install NODE_RED supplements
